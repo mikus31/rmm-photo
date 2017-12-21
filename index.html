@@ -1,110 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dressed | Tees & Gifts</title>
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        body {
+            background: white;
+        }
+        
+        #header {
+            position: fixed;
+            z-index: 650;
+            width: 100%;
+            height: 85px;
+            background: #24476A;
+        }
+        
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 40px;
+            background: #24476A;
+        }
+        
+        #social {
+            position: absolute;
+            top: 53px;
+            right: 15px;
+        }
+        
+        h1 {
+            position: absolute;
+            font-family: 'Lobster', cursive;
+            width: 70%;
+            margin: 0 auto;
+            color: whitesmoke;
+            top: 15px;
+            left: 15px;
+            font-size: 3.5em;
+        }
+        
+        h2 {
+            position: absolute;
+            font-family: 'Lobster', cursive;
+            margin: 0 auto;
+            color: whitesmoke;
+            bottom: 3px;
+            right: 15px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            font-family: 'Lobster', cursive;
+            color: #24476A;
+            font-size: 2em;
+        }
+        
+        h4 {
+            position: absolute;
+            font-family: 'Lobster', cursive;
+            margin: 0 auto;
+            color: whitesmoke;
+            bottom: 3px;
+            left: 15px;
+            font-size: 1.8em;
+        }
+        
+        p {
+            font-family: 'Raleway', sans-serif;
+            color: #24476A;
+        }
+        
+        ul.square {
+            list-style-type: square;
+            font-family: 'Raleway', sans-serif;
+            color: #24476A;
+        }
+        
+        a {
+            color: #8BC1F7;
+        }
+        
+        a:visited {
+            color: #8BC1F7;
+        }
+        
+        #sidebar {
+            position: absolute;
+            top: 105px;
+            left: 15px;
+            width: 20%;
+            border: .5px solid #24476A;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        #shirtbox {
+            position: absolute;
+            top: 105px;
+            left: 25%;
+            width: 70%;
+        }
+        
+        .bigshirts {}
+        
+        .smallshirts {}
+    </style>
+</head>
+
 <body>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
-  </div>
-</nav>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-<!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-  <h1><b>PHOTOLIO</b></h1>
-  <p><b>A template made by w3.css for photographers.</b></p>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
-</header>
-</div>
-
-<!-- Photo Grid -->
-<div class="w3-row" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/sound.jpg" style="width:100%">
-    <img src="/w3images/woods.jpg" style="width:100%">
-    <img src="/w3images/rock.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="/w3images/coffee.jpg" style="width:100%">
-    <img src="/w3images/bridge.jpg" style="width:100%">
-    <img src="/w3images/notebook.jpg" style="width:100%">
-    <img src="/w3images/london.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/avatar_g.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/workbench.jpg" style="width:100%">
-    <img src="/w3images/gondol.jpg" style="width:100%">
-    <img src="/w3images/skies.jpg" style="width:100%">
-    <img src="/w3images/lights.jpg" style="width:100%">
-    <img src="/w3images/workshop.jpg" style="width:100%">
-  </div>
-</div>
-
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Toggle grid padding
-function myFunction() {
-    var x = document.getElementById("myGrid");
-    if (x.className === "w3-row") {
-        x.className = "w3-row-padding";
-    } else { 
-        x.className = x.className.replace("w3-row-padding", "w3-row");
-    }
-}
-
-// Open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
+    <div id="header">
+        <div id="social">
+            <a href="mailto: rmichael.mcneil@gmail.com" target="_blank"><img src="images/gmail.png"></a> &nbsp;
+            <a href="https://twitter.com/thehazean" target="_blank"><img src="images/twitter.png"></a> &nbsp;
+            <a href="https://facebook.com/mikus31" target="_blank"><img src="images/facebook.png"></a> &nbsp;
+            <a href="https://www.instagram.com/mikus31/" target="_blank"><img src="images/instagram.png"></a> &nbsp; </div>
+        <h1>Dressed</h1> </div>
+    <div id="sidebar">
+        <h3>About Us</h3>
+        <p>Dressed is a regionally-inspired gift shop specializing in t-shirts. The name of the shop is a play on words. Dressed as in po-boys (for the unfamiliar, <a href="https://en.wikipedia.org/wiki/Po%27_boy#Preparation" target="_blank">see here</a>) as in southeast Louisiana.</p>
+        <p>Hence the "regionally-inspired" bit above. A lot of our stuff will be Louisiana-related, but not all of it.</p>
+        <p>Starting a t-shirt shop is not a unique idea, but our ideas for t-shirts and our designs will be unique. Shop inspirations:</p>
+        <ul class="square">
+            <li><a href="https://www.homage.com/" target="_blank">Homage</a></li>
+            <li><a href="https://statelytype.com/" target="_blank">Stately Type</a></li>
+            <li><a href="https://dirtycoast.com/" target="_blank">Dirty Coast</a></li>
+        </ul>
+        <p>I've always been a big fan of place-related design, and think people enjoy wearing clothing that represents the places they love. Whether it's home or some far-off land they visited once upon a time. </p>
+        <p>So that's what we're going to make. Great designs and great shirts.</p>
+        <p>Get Dressed today!</p>
+    </div>
+    <div id="shirtbox">
+        <div class="bigshirts"><img src="images/480-blank.png"></div> &nbsp;
+        <div class="smallshirts"><img src="images/235-blank.png"></div>
+    </div>
+    <div id="footer">
+        <h4>Tees & Gifts</h4>
+        <h2>#getdressed</h2></div>
 </body>
+
 </html>
